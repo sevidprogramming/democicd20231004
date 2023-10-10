@@ -17,7 +17,8 @@ export class DemoawspipelineStack extends cdk.Stack {
           'npm ci',
           'npm run build',
           'npm cdk synth',
-        ]
-    }),    
+        ],
+      }),    
+    });
   }
 }
