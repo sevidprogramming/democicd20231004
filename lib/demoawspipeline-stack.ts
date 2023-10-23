@@ -11,6 +11,7 @@ export class DemoawspipelineStack extends cdk.Stack {
 
     // The code that defines your stack goes here
     //AWS CI-CD Pipeline
+    const borrar='sfg'
     const democicdpipeline = new CodePipeline(this, 'demopipeline', 
     {
       synth: new ShellStep('Synth', {
