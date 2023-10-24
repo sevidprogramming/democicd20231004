@@ -11,7 +11,7 @@ export class lambdaStack extends cdk.Stack {
     const demolambda = new lambda.Function(this, 'LambdaFunction', {
       runtime: lambda.Runtime.NODEJS_16_X,
       handler: 'index.handler',
-      code: lambda.Code.fromAsset('export.handler = _ => "Hello, CDK";')
+      code: lambda.Code.fromInline('export.handler = _ => "Hello, CDK";')
     });
   }
 }
